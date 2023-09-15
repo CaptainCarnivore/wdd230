@@ -1,0 +1,22 @@
+@media screen and (min-width: 850px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        
+    }
+    nav a {
+        width: 25%;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    main h2 {
+        grid-column: span 2;
+    }
+}
