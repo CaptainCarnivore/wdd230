@@ -1,0 +1,60 @@
+:root {
+    --caribbean-current: #246a73ff;
+    --dark-cyan: #368f8bff;
+    --isabelline: #f4edeaff;
+    --light-orange: #F4D1AE;
+}
+
+header, section h3 {
+    background-color: var(--caribbean-current);
+    color: var(--isabelline);
+    padding: 0.5rem;
+}
+
+body {
+    color: var(--isabelline);
+    background-color: var(--dark-cyan);
+}
+
+section p {
+    padding-left: 0.5rem;
+}
+
+#siteColorSchema{
+    > p #headerColor {
+        color: var(--isabelline);
+        background-color: black;
+        max-width: 120px;
+        padding: 0.5rem;
+        font-weight: bold;
+    }
+    > p #headerBack {
+        color: var(--caribbean-current);
+        background-color: black;
+        max-width: 120px;
+        padding: 0.5rem;
+        font-weight: bolder;
+    }
+    > p #bodyColor {
+        color: var(--isabelline);
+        background-color: black;
+        max-width: 120px;
+        padding: 0.5rem;
+        font-weight: bold;
+    }
+    > p #bodyBack {
+        color: var(--dark-cyan);
+        background-color: black;
+        max-width: 120px;
+        padding: 0.5rem;
+        font-weight: bold;
+    }
+    > p #linkColor {
+        color: var(--light-orange);
+        background-color: black;
+        max-width: 120px;
+        padding: 0.5rem;
+        font-weight: bold;
+    }
+}
+
