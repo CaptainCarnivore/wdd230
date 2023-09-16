@@ -58,3 +58,11 @@ section p {
     }
 }
 
+#typographyHeader {
+    font-family: 'Monserrat', sans-serif;
+}
+
+#typographyBody {
+    font-family: 'Open Sans', sans-serif;
+}
+
