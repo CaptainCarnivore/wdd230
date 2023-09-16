@@ -20,43 +20,42 @@ section p {
     padding-left: 0.5rem;
 }
 
-#siteColorSchema{
-    > p #headerColor {
+#headerColor {
         color: var(--isabelline);
         background-color: black;
         max-width: 120px;
         padding: 0.5rem;
         font-weight: bold;
-    }
-    > p #headerBack {
+}
+#headerBack {
         color: var(--caribbean-current);
         background-color: black;
         max-width: 120px;
         padding: 0.5rem;
         font-weight: bolder;
-    }
-    > p #bodyColor {
+}
+#bodyColor {
         color: var(--isabelline);
         background-color: black;
         max-width: 120px;
         padding: 0.5rem;
         font-weight: bold;
-    }
-    > p #bodyBack {
+}
+#bodyBack {
         color: var(--dark-cyan);
         background-color: black;
         max-width: 120px;
         padding: 0.5rem;
         font-weight: bold;
-    }
-    > p #linkColor {
+}
+#linkColor {
         color: var(--light-orange);
         background-color: black;
         max-width: 120px;
         padding: 0.5rem;
         font-weight: bold;
-    }
 }
+
 
 #typographyHeader {
     font-family: 'Monserrat', sans-serif;
