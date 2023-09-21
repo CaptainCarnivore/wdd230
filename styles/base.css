@@ -25,7 +25,35 @@ header h1 {
     margin-bottom: 2rem;
 }
 
-nav {
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 5rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+
+
+.navigation {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -33,7 +61,12 @@ nav {
 
 }
 
-nav a {
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+
     color: white;
     background-color: black;
     padding: 1rem;
@@ -41,10 +74,19 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover{
+.navigation li a:hover{
     background-color: #643219;
     font-weight: bold;
 }
+
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
 
 main {
     max-width: 95%;
@@ -100,6 +142,3 @@ footer {
     font-size: 1.5rem;
 }
 
-#lastModified {
-
-}
