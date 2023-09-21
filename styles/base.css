@@ -50,6 +50,7 @@ header h1 {
 	right: 1rem;
 	font-size: 3rem;
 	cursor: pointer;
+    color: white;
 }
 
 
@@ -62,7 +63,6 @@ header h1 {
 
 .navigation li {
     display: none;
-
 }
 
 .navigation li a {
