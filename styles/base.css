@@ -58,18 +58,18 @@ header h1 {
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
-
 }
 
 .navigation li {
     display: none;
+
 }
 
 .navigation li a {
 
     color: white;
     background-color: black;
-    padding: 1rem;
+    padding: .5rem;
     font-size: 2rem;
     text-decoration: none;
 }
