@@ -10,9 +10,9 @@ modeButton.addEventListener("click", () => {
 		body.style.background = "#000";
 		console.log(cardLink);
 	} else {
-		main.style.background = "#eee";
-		main.style.color = "#000";
-		body.style.background = "#eee";
+		main.style.background = "#368f8bff";
+		main.style.color = "#f4edeaff";
+		body.style.background = "#368f8bff";
 		modeButton.textContent = "🌙";
 	}
 });

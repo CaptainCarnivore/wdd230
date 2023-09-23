@@ -1,0 +1,138 @@
+:root {
+    --caribbean-current: #246a73ff;
+    --dark-cyan: #368f8bff;
+    --isabelline: #f4edeaff;
+    --light-orange: #F4D1AE;
+}
+
+header {
+    color: var(--isabelline);
+    background-color: var(--caribbean-current);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+body {
+    color: var(--isabelline);
+    background-color: lightgray;
+}
+
+h1, h2, h3 {
+    font-family: 'Monserrat', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    max-width: 95%;
+    margin: auto;
+    margin-top: 5rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 2rem;
+
+}
+
+h2 {
+    background-color: var(--caribbean-current);
+    color: var(--isabelline);
+}
+
+p {
+    background-color: var(--dark-cyan);
+    color: var(--isabelline);
+}
+
+#hero-img{
+    width: 100%;
+
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -25px; 
+    max-height: 200px;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 5rem;
+	right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+    color: white;
+}
+
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+
+    color: white;
+    background-color: black;
+    padding: .5rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.navigation li a:hover{
+    background-color: #643219;
+    font-weight: bold;
+}
+
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
