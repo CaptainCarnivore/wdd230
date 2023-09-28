@@ -89,12 +89,13 @@ header h1 {
 
 
 main {
-    max-width: 95%;
+    max-width: auto;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 95%;
     text-align: center;
     gap: 2rem;
+    justify-content: center;
 }
 
 main h2 {
@@ -142,3 +143,40 @@ footer {
     font-size: 1.5rem;
 }
 
+.hero {
+    grid-column: span 1;
+    margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+  }
+
+  .hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:"Great Vibes", serif;
+}
+
+#googleMap {
+    grid-column: span 1;
+}

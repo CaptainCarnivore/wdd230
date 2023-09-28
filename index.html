@@ -22,7 +22,7 @@
 <body>
     
     <header>
-        <img src="images/profile-picture.jpg" alt="Austin Jensen Profile Picture">
+        <img src="images/profile-picture.jpg" alt="Austin Jensen Profile Picture" loading="lazy" width="150px" height="150px">
         <h1>Austin Jensen</h1>
     </header>
     
@@ -39,6 +39,15 @@
         🌙
     </div>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <img srcset="images/hero-large.webp" alt="Tucson Temple" width="960" height="480" loading="lazy">
+            </picture>
+            <div class="herolabel">
+                <p>Tucson Arizona Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activites</h3>
@@ -58,9 +67,10 @@
             <br>
             Weather: 89&deg;F - Cloudy.<br>
             <br>
-            Page Visits: 216<br>
+            Number of visits: <span class="visits"></span><br>
             <br>
         </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6754.218884626789!2d-110.81804241689053!3d32.17432337993609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1695932678340!5m2!1sen!2sus" width="960" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="googleMap"></iframe>
     </main>
     
     <footer>
@@ -75,5 +85,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/pageVisit.js"></script>
 </body>
 </html>

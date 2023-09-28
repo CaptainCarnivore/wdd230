@@ -1,4 +1,4 @@
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 960px) {
     #menu {
 		display: none; /* hide hamburger button */
 	}
@@ -18,8 +18,9 @@
     }
 
     main {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 65% auto;
         gap: 1rem;
+        max-width: 960px;
     }
 
     main h2 {
@@ -30,5 +31,14 @@
         display: block;
         background-color: black;
         padding: 1rem;
+    }
+
+    .hero {
+        grid-column: span 2;
+
+      }
+
+      #googleMap {
+        grid-column: span 2;
     }
 }
