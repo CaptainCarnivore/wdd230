@@ -1,4 +1,4 @@
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1000px) {
     #menu {
 		display: none; /* hide hamburger button */
 	}
@@ -28,5 +28,16 @@
         display: block;
         background-color: black;
         padding: 1rem;
+    }
+
+    .sidebar {
+        grid-column: 1/2;
+    }
+    
+    .gallery {
+        grid-column: 2/3;
+    }
+    .gallery .card img:hover {
+        box-shadow: 0 0 50px #333;
     }
 }

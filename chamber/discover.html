@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site for the Tucson Metro Chamber portal written by Austin Jensen for WDD 230 - Web Frontend Development">
+    <meta name="author" content="Austin Jensen">
+    <title>Austin Jensen - WDD 230 - Tucson Metro Chamber</title>
+    <meta property="og:title" content="Austin Jensen Tucson Metro Chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://captaincarnivore.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://tucsonchamber.org/wp-content/uploads/2022/12/tucson-chamber-2022-sign-scaled.jpg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/tucson-metro-chamber-logo.png" alt="Tucson Metro Chamber logo">
+        <h1>Tucson Metro Chamber</h1>
+    </header>
+
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="/chamber/index.html">Home</a></li>
+            <li><a href="/chamber/discover.html">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">Join</a></li>
+        </ul>
+    </nav>
+    <div id="mode">
+        🌙
+    </div>
+   
+    <main class="discoverMain">
+        <div class="sidebar">
+            <section class="card" id="visitation">
+                <h2>Welcome!</h2>
+                <p id="lastVisited"></p>
+            </section>
+            <section class="card" id="demographics">
+                <h2>Population Demographics</h2>
+                <ul id="demoList">
+                    <li>Hispanic: 45.7%</li>
+                    <li>White: 40.9%</li>
+                    <li>African-American: 4.6%</li>
+                    <li>2+ Races: 4.2%</li>
+                    <li>Asian: 2.8%</li>
+                    <li>Native American: 1.5%</li>
+                    <li>Other: 0.4%</li>
+                </ul>
+            </section>
+            <section class="card" id="map">
+                <h2>Map</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1687.6902419505334!2d-110.96780392136367!3d32.22092020350317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d67123dee58cc7%3A0x5efd42f345f0dbff!2sTucson%20Metro%20Chamber!5e0!3m2!1sen!2sus!4v1696111038190!5m2!1sen!2sus" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+        <div class="gallery">
+            <section class="card">
+                <img src="/chamber/images/colossal-cave.webp" alt="Colossal Cave" loading="lazy" width="500px" height="250px"><br>
+                <span class="imageCaption">Colossal Cave</span><br><br>
+            </section>
+            <section class="card">
+                <img src="/chamber/images/mission-san-xavier-del-bac.webp" alt="Mission San Xavier Del Bac" loading="lazy" width="500px" height="250px"><br>
+                <span class="imageCaption">Mission San Xavier Del Bac</span><br><br>
+            </section>
+            <section class="card">
+                <img src="/chamber/images/pima-air-and-space-museum.webp" alt="Pima Air and Space Museum" loading="lazy" width="500px" height="250px"><br>
+                <span class="imageCaption">Pima Air and Space Museum</span><br><br>
+            </section>
+            <section class="card">
+                <img src="/chamber/images/reid-park-zoo.webp" alt="Reid Park Zoo" loading="lazy" width="500px" height="250px"><br>
+                <span class="imageCaption">Reid Park Zoo</span><br><br>
+            </section>
+            <section class="card">
+                <img src="/chamber/images/st-augustine-cathedral.webp" alt="St Augustine Cathedral" loading="lazy" width="500px" height="250px"><br>
+                <span class="imageCaption">St. Augustine Cathedral</span><br><br>
+            </section>
+            <section class="card">
+                <img src="/chamber/images/tohono-chul.webp" alt="Tohono Chul" loading="lazy" width="500px" height="250px"><br>
+                <span class="imageCaption">Tohono Chul</span><br><br>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy;2023<br><br>
+            Austin Jensen<br><br>
+            Arizona<br><br>
+            ausjensen0451@byui.edu<br><br>
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/darkMode.js"></script>
+<script src="scripts/getDates.js"></script>
+</body>
+</html>
