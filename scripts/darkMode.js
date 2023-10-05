@@ -14,9 +14,9 @@ modeButton.addEventListener("click", () => {
 			cardLink[i].style.color = "#F5F5DC";
 		}
 	} else {
-		main.style.background = "#eee";
+		main.style.background = "#fff";
 		main.style.color = "#000";
-		body.style.background = "#eee";
+		body.style.background = "#fff";
 		modeButton.textContent = "🌙";
 		for (let i = 0; i < cardLink.length; i++) {
 			cardLink[i].style.color = "#0000EE";
