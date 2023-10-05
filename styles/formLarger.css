@@ -1,0 +1,43 @@
+@media screen and (min-width: 960px) {
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+    .navigation {
+        display: flex;
+		flex-direction: row;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+    nav a {
+        width: 25%;
+    }
+
+    main{
+        max-width: 64em;
+        margin:auto;
+    }
+
+    main h2 {
+        grid-column: span 2;
+    }
+
+    .navigation li {
+        display: block;
+        background-color: black;
+        padding: 1rem;
+    }
+
+    .hero {
+        grid-column: span 2;
+
+      }
+
+      #googleMap {
+        grid-column: span 2;
+    }
+}
