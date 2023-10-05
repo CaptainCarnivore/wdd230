@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Jensen - WDD 230 - Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <img src="images/profile-picture.webp" alt="Austin Jensen Profile Picture" loading="lazy" width="125px" height="125px">
+        <h1>Austin Jensen</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./chamber/index.html">Chamber</a></li>
+            <li><a href="./week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <div id="mode">
+        🌙
+    </div>
+
+    <main>
+        
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>User Registration</legend>
+                <label class="top">Username* <input type="text" id="username" name="username" required></label>
+                <div id="formmessage"></div>
+                <label class="top">Password* <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}" placeholder="Alphanumeric only"></label>
+                <label class="top">Repeat Password* <input type="password" id="repeatPassword" name="repeatPassword" required pattern="[A-Za-z0-9]{8,}" placeholder="Alphanumeric only"></label>
+                <label class="top">Email* <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+                <label class="top">Page Rating: <div id="rangevalue">0 </div>
+                    <input type="range" id="range" name="range" min="0" max="10" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </label>
+
+            </fieldset>
+
+            <input type="submit" value="Register" class="submitBtn">
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            &copy;2023<br><br>
+            Austin Jensen<br><br>
+            Arizona<br><br>
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
