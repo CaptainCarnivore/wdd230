@@ -1,0 +1,29 @@
+{
+    "familyName" : "Jensen",
+    "date" : "10-11-23",
+    "numPeople" : "4",
+    "visitedByBishopric" : true,
+    "members" : [
+        {
+            "name" : "Austin Jensen",
+            "gender" : "male",
+            "birthdate" : "11-18-1995"
+        },
+        {
+            "name" : "Karl Jensen",
+            "gender" : "male",
+            "birthdate" : "1-13-1965"
+        },
+        {
+            "name" : "Nancy Jensen",
+            "gender" : "female",
+            "birthdate" : "9-20-1964"
+        },
+        {
+            "name" : "Brandon Jensen",
+            "gender" : "male",
+            "birthdate" : "7-28-1995"
+        }
+    ]
+
+}
