@@ -8,16 +8,16 @@ async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
     console.log(data);
-    displayLinks(data);
+    displayLinks(data.weeks);
 }
 
-const displayLinks = (data) => {
-    data.weeks.forEach((week) => {
+const displayLinks = (weeks) => {
+    weeks.forEach((week) => {
         let item = document.createElement("li");
         let itemName = document.createElement("span");
         itemName.textContent = `${week} `;
         item.appendChild(itemName);
-        week.links.forEach((link) => {
+        this.links.forEach((link) => {
             let itemLinkSpace = document.createElement("span");
             let itemLink = document.createElement("a");
             itemLinkSpace.textContent = ` | `;
