@@ -5,11 +5,11 @@
             "links": 
             [
                 {
-                    "url":"weekName01/holygrail.html",
+                    "url":"week01/holygrail.html",
                     "title":"HG Layout"
                 },
                 {
-                    "url":"weekName01/media-query.html",
+                    "url":"week01/media-query.html",
                     "title":"mQueries"
                 }
             ]
@@ -19,7 +19,7 @@
             "links": 
             [
                 {
-                    "url":"weekName02/design.html",
+                    "url":"week02/design.html",
                     "title":"Design"
                 },
                 {
@@ -27,7 +27,7 @@
                     "title":"Hamburger Pen"
                 },
                 {
-                    "url":"weekName02/bom.html",
+                    "url":"week02/bom.html",
                     "title":"BOM"
                 }
             ]
@@ -37,19 +37,19 @@
             "links":
             [
                 {
-                    "url":"weekName03/images/landscape.webp",
+                    "url":"week03/images/landscape.webp",
                     "title":"WebP"
                 },
                 {
-                    "url":"weekName03/lazyload.html",
+                    "url":"week03/lazyload.html",
                     "title":"Lazy Load"
                 },
                 {
-                    "url":"weekName03/reponsive-images.html",
+                    "url":"week03/reponsive-images.html",
                     "title":"Reponsive Images"
                 },
                 {
-                    "url":"weekName03/bom.html",
+                    "url":"week03/bom.html",
                     "title":"Web Storage API"
                 }
             ]
@@ -63,15 +63,15 @@
                     "title":"Pseudo-Class Pen"
                 },
                 {
-                    "url":"weekName04/images/css-combinators-exercise.png",
+                    "url":"week04/images/css-combinators-exercise.png",
                     "title":"CSS Combinators Excercise"
                 },
                 {
-                    "url":"weekName04/tablebuild.html",
+                    "url":"week04/tablebuild.html",
                     "title":"Table Build"
                 },
                 {
-                    "url":"weekName04/form-start/index.html",
+                    "url":"week04/form-start/index.html",
                     "title":"Form Build"
                 }
             ]
@@ -85,15 +85,15 @@
                     "title":"Psuedo-Element Pen"
                 },
                 {
-                    "url":"weekName05/new-ward-members.json",
+                    "url":"week05/new-ward-members.json",
                     "title":"JSON File"
                 },
                 {
-                    "url":"weekName05/prophets.html",
+                    "url":"week05/prophets.html",
                     "title":"Fetch API"
                 },
                 {
-                    "url":"weekName05/weather.html",
+                    "url":"week05/weather.html",
                     "title":"Weather API"
                 }
             ]
