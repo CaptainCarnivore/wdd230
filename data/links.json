@@ -1,0 +1,104 @@
+{
+    "weeks": [
+        {
+            "weekName": "Week 1",
+            "links": 
+            [
+                {
+                    "url":"weekName01/holygrail.html",
+                    "title":"HG Layout"
+                },
+                {
+                    "url":"weekName01/media-query.html",
+                    "title":"testing this stupid thingQueries"
+                }
+            ]
+        },
+        {
+            "weekName": "Week 2",
+            "links": 
+            [
+                {
+                    "url":"weekName02/design.html",
+                    "title":"Design"
+                },
+                {
+                    "url":"https://codepen.io/ausjensen0451/pen/JjwOPjW",
+                    "title":"Hamburger Pen"
+                },
+                {
+                    "url":"weekName02/bom.html",
+                    "title":"BOM"
+                }
+            ]
+        },
+        {
+            "weekName":"Week 3",
+            "links":
+            [
+                {
+                    "url":"weekName03/images/landscape.webp",
+                    "title":"WebP"
+                },
+                {
+                    "url":"weekName03/lazyload.html",
+                    "title":"Lazy Load"
+                },
+                {
+                    "url":"weekName03/reponsive-images.html",
+                    "title":"Reponsive Images"
+                },
+                {
+                    "url":"weekName03/bom.html",
+                    "title":"Web Storage API"
+                }
+            ]
+        },
+        {
+            "weekName":"Week 4",
+            "links":
+            [
+                {
+                    "url":"https://codepen.io/ausjensen0451/pen/xxmyzNJ",
+                    "title":"Pseudo-Class Pen"
+                },
+                {
+                    "url":"weekName04/images/css-combinators-exercise.png",
+                    "title":"CSS Combinators Excercise"
+                },
+                {
+                    "url":"weekName04/tablebuild.html",
+                    "title":"Table Build"
+                },
+                {
+                    "url":"weekName04/form-start/index.html",
+                    "title":"Form Build"
+                }
+            ]
+        },
+        {
+            "weekName":"Week 5",
+            "links":
+            [
+                {
+                    "url":"https://codepen.io/ausjensen0451/pen/RwEdMGy",
+                    "title":"Psuedo-Element Pen"
+                },
+                {
+                    "url":"weekName05/new-ward-members.json",
+                    "title":"JSON File"
+                },
+                {
+                    "url":"weekName05/prophets.html",
+                    "title":"Fetch API"
+                },
+                {
+                    "url":"weekName05/weather.html",
+                    "title":"Weather API"
+                }
+            ]
+        }
+        
+    ]
+
+}
