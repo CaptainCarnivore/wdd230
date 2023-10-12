@@ -1,25 +1,25 @@
 {
-    "weeks": [
+    "weekNames": [
         {
-            "week": "Week 1",
+            "weekName": "Week 1",
             "links": 
             [
                 {
-                    "url":"week01/holygrail.html",
+                    "url":"weekName01/holygrail.html",
                     "title":"HG Layout"
                 },
                 {
-                    "url":"week01/media-query.html",
+                    "url":"weekName01/media-query.html",
                     "title":"mQueries"
                 }
             ]
         },
         {
-            "week": "Week 2",
+            "weekName": "Week 2",
             "links": 
             [
                 {
-                    "url":"week02/design.html",
+                    "url":"weekName02/design.html",
                     "title":"Design"
                 },
                 {
@@ -27,35 +27,35 @@
                     "title":"Hamburger Pen"
                 },
                 {
-                    "url":"week02/bom.html",
+                    "url":"weekName02/bom.html",
                     "title":"BOM"
                 }
             ]
         },
         {
-            "week":"Week 3",
+            "weekName":"Week 3",
             "links":
             [
                 {
-                    "url":"week03/images/landscape.webp",
+                    "url":"weekName03/images/landscape.webp",
                     "title":"WebP"
                 },
                 {
-                    "url":"week03/lazyload.html",
+                    "url":"weekName03/lazyload.html",
                     "title":"Lazy Load"
                 },
                 {
-                    "url":"week03/reponsive-images.html",
+                    "url":"weekName03/reponsive-images.html",
                     "title":"Reponsive Images"
                 },
                 {
-                    "url":"week03/bom.html",
+                    "url":"weekName03/bom.html",
                     "title":"Web Storage API"
                 }
             ]
         },
         {
-            "week":"Week 4",
+            "weekName":"Week 4",
             "links":
             [
                 {
@@ -63,21 +63,21 @@
                     "title":"Pseudo-Class Pen"
                 },
                 {
-                    "url":"week04/images/css-combinators-exercise.png",
+                    "url":"weekName04/images/css-combinators-exercise.png",
                     "title":"CSS Combinators Excercise"
                 },
                 {
-                    "url":"week04/tablebuild.html",
+                    "url":"weekName04/tablebuild.html",
                     "title":"Table Build"
                 },
                 {
-                    "url":"week04/form-start/index.html",
+                    "url":"weekName04/form-start/index.html",
                     "title":"Form Build"
                 }
             ]
         },
         {
-            "week":"Week 5",
+            "weekName":"Week 5",
             "links":
             [
                 {
@@ -85,15 +85,15 @@
                     "title":"Psuedo-Element Pen"
                 },
                 {
-                    "url":"week05/new-ward-members.json",
+                    "url":"weekName05/new-ward-members.json",
                     "title":"JSON File"
                 },
                 {
-                    "url":"week05/prophets.html",
+                    "url":"weekName05/prophets.html",
                     "title":"Fetch API"
                 },
                 {
-                    "url":"week05/weather.html",
+                    "url":"weekName05/weather.html",
                     "title":"Weather API"
                 }
             ]
