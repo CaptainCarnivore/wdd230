@@ -7,7 +7,7 @@ const actList = document.querySelector('#activityList');
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    console.log(data);
+    //console.log(data);
     displayLinks(data.weeks);
 }
 
@@ -15,17 +15,18 @@ const displayLinks = (weeks) => {
     weeks.forEach((week) => {
         let item = document.createElement("li");
         let itemName = document.createElement("span");
-        itemName.textContent = `${week} `;
+        itemName.textContent = `${week.weekName} `;
         item.appendChild(itemName);
-        this.links.forEach((link) => {
+        week.links.forEach((link) => {
             let itemLinkSpace = document.createElement("span");
             let itemLink = document.createElement("a");
             itemLinkSpace.textContent = ` | `;
-            itemLink.setAttribute('href', `${url}`);
-            itemLink.setAttribute('text', `${title}`);
+            itemLink.href=  `${link.url}`;
+            itemLink.text= `${link.title}`;
             item.appendChild(itemLink);
             item.appendChild(itemLinkSpace);
             });
+         actList.appendChild(item);
     });
 }
 
