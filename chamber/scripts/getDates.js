@@ -11,14 +11,14 @@ let lastVisit = Number(window.localStorage.getItem("lastVisit-ls")) || todayMS;
 
 const lastVisited = document.querySelector('#lastVisited');
 
-if (todayMS == lastVisit)
-{
-    lastVisited.textContent = "Welcome! Let us know if you have any questions.";
-} else if ((todayMS - lastVisit) <= 84600000) {
-    lastVisited.textContent = "Back so soon! Awesome!";
-} else if ((todayMS - lastVisit) > 84600000) {
-    lastVisited.textContent = "You last visited " + ((todayMS - lastVisit) / msToDays).toFixed(0) + "days ago";
-}
+//if (todayMS == lastVisit)
+//{
+//    lastVisited.textContent = "Welcome! Let us know if you have any questions.";
+//} else if ((todayMS - lastVisit) <= 84600000) {
+//    lastVisited.textContent = "Back so soon! Awesome!";
+//} else if ((todayMS - lastVisit) > 84600000) {
+//    lastVisited.textContent = "You last visited " + ((todayMS - lastVisit) / msToDays).toFixed(0) + "days ago";
+//}
 
 localStorage.setItem("lastVisit-ls", todayMS);
 

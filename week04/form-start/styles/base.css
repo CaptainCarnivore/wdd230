@@ -95,11 +95,6 @@ form label.top input, form label.top select {
 
 }
 
-form label.sbs {
-    display: block;
-    padding: .75rem 0;
-    color: #555;
-}
 
 form input.submitBtn {
     border: none;

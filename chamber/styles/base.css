@@ -3,6 +3,11 @@
     --dark-cyan: #368f8bff;
     --isabelline: #f4edeaff;
     --light-orange: #F4D1AE;
+    --border: hsla(0,0%,20%,.8);
+	--borderlight: hsla(0,0%,33%,.3);
+	--zebra: hsl(0, 0%, 93%, 1);
+    --back1: #000000;
+    --back2: #333333;
 }
 
 header {
@@ -24,7 +29,7 @@ header h1 {
 
 body {
     color: var(--isabelline);
-    background-color: lightgray;
+    background-color: white;
 }
 
 h1, h2, h3 {
@@ -162,3 +167,104 @@ iframe {
     padding: .5rem;
 }
 
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--dark-cyan);
+    border-radius: 25px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color:black;
+    font-weight: bold;
+    margin: 0 1rem;
+    padding: 0 .6rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    margin: auto;
+    font-size: .8rem;
+    align-content: left;
+}
+
+form label.top {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--caribbean-current);
+    border-radius: 4px;
+    padding: .75rem;
+    color: white;
+    width: 100%;
+    max-width: 20rem;
+    background-color: var(--dark-cyan);
+    justify-content: right;
+}
+
+fieldset{
+background-color: lightgray;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form label.top input:required{
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+}
+
+thead {
+    background-color: var(--back2);
+    color: white;
+}
+
+th, td
+{
+    border: 1px solid var(--borderlight);
+}
+
+tbody tr:nth-child(even) {
+	background-color: lightgray;
+}
+tbody tr:nth-child(odd) {
+    background-color: var(--dark-cyan);
+}
+
+td {
+    color: black;
+	text-align: center;
+    padding: .5rem;
+}
+
+th {
+    padding: .5rem;
+    font-size: larger;
+}
+tbody tr:nth-child(even) th {
+    color: black;
+}
+
+
+thead th:first-child
+{
+    background-color: var(--caribbean-current);
+}

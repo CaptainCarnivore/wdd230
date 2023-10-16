@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site for the Tucson Metro Chamber portal written by Austin Jensen for WDD 230 - Web Frontend Development">
     <meta name="author" content="Austin Jensen">
-    <title>Austin Jensen - WDD 230 - Tucson Metro Chamber</title>
-    <meta property="og:title" content="Austin Jensen Tucson Metro Chamber">
+    <title>Austin Jensen - WDD 230 - Tucson Metro Chamber - Join</title>
+    <meta property="og:title" content="Austin Jensen Tucson Metro Chamber Join Page">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://captaincarnivore.github.io/wdd230/chamber/index.html">
+    <meta property="og:url" content="https://captaincarnivore.github.io/wdd230/chamber/join.html">
     <meta property="og:image" content="https://tucsonchamber.org/wp-content/uploads/2022/12/tucson-chamber-2022-sign-scaled.jpg">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,30 +30,76 @@
             <li><a href="./index.html">Home</a></li>
             <li><a href="./discover.html">Discover</a></li>
             <li><a href="">Directory</a></li>
-            <li><a href="">Join</a></li>
+            <li><a href="./join.html">Join</a></li>
         </ul>
     </nav>
     <div id="mode">
         🌙
     </div>
 
-    <main>
-        <form method="get" action="thanks.html">
+    <main id="joinMain">
+        <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Membership Information</legend>
                 <label class="top">First Name* <input type="text" id="fName" name="fName" required></label>
                 <label class="top">Last Name* <input type="text" id="lName" name="lName" required></label>
                 <label class="top">Title / Position <input type="text" id="title" name="title" pattern="[a-zA-Z0-9-]{7,}"></label>
                 <label class="top">Email* <input type="email" id="email" name="email" required " placeholder="johnSmith@website.com"></label>
-                <label class="top">Phone Number* <input type="tel" name="phone" id="phone" required></label>
+                <label class="top">Phone Number* <input type="tel" name="phone" id="phone" required></label><br><br>
+                <label class="top" for="w3review">Organization Description</label>
+                <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                <input type="hidden" name="timestamp" id="timestamp" value="">
             </fieldset>
             <fieldset>
                 <legend>Membership Level</legend>
                 <label class="top"><input type="radio" name="memLevel" value="nonprofit">NP</label>
-                <label class="top"><input type="radio" name="memLevel" value="nonprofit">NP</label>
+                <label class="top"><input type="radio" name="memLevel" value="bronze">Bronze</label>
+                <label class="top"><input type="radio" name="memLevel" value="silver">Silver</label>
+                <label class="top"><input type="radio" name="memLevel" value="gold">Gold</label>
             </fieldset>
-        
+            <input type="submit" value="Join" class="submitBtn">
         </form>
+
+        <table>
+            <caption>
+                Table 1: Account Benefits Comparison
+            </caption>
+            <thead>
+                <tr>
+                    <th colspan="5" scope="colgroup">Membership Plans Benefits</th>
+                </tr>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Nonprofit</th>
+                    <th scope="col">Bronze</th>
+                    <th scope="col">Silver</th>
+                    <th scope="col">Gold</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Member Forum</th>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th scope="row">Event Scheduling</th>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th scope="row">Live Training</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <footer>
@@ -69,5 +115,6 @@
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/darkMode.js"></script>
 <script src="scripts/getDates.js"></script>
+<script src="scripts/joinInjectDate.js"></script>
 </body>
 </html>
