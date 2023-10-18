@@ -1,0 +1,60 @@
+{
+    "members" : [
+        {
+            "name" : "Alpha Fleet",
+            "address" : "830 E. 22nd Street, Tucson, AZ 85713",
+            "phone" : "(520) 496-0092",
+            "url" : "https://alphafleetsvcs.com/",
+            "icon" : "https://alphafleetsvcs.com/wp-content/uploads/2023/06/Untitled-design-18-1-150x150.webp",
+            "memLevel" : "Silver"
+        },
+        {
+            "name" : "Arizona State University",
+            "address" : "340 N. Commerce Park Loop #250, Tucson, AZ 85745",
+            "phone" : "(520) 334-8767",
+            "url" : "http://www.asu.edu/",
+            "icon" : "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png",
+            "memLevel" : "Gold"
+        },
+        {
+            "name" : "Shaffer Dry Cleaning & Laundry",
+            "address" : "2901 N. Campbell Avenue, Tucson, AZ 85719",
+            "phone" : "(520) 327-4600",
+            "url" : "http://www.shafferdrycleaning.com/",
+            "icon" : "https://shafferdrycleaning.com/wp-content/themes/yootheme/cache/bc/Shaffer-logo_png-bcdc4f64.webp",
+            "memLevel" : "Bronze"
+        },
+        {
+            "name" : "Bain Law Firm PLLC",
+            "address" : "6057 E. Grant Road #100, Tucson, AZ 85712",
+            "phone" : "(520) 777-3747",
+            "url" : "http://blfaz.com/",
+            "icon" : "https://blfaz.com/wp-content/uploads/2021/02/BainLaw-Logo-Plain.jpg",
+            "memLevel" : "Silver"
+        },
+        {
+            "name" : "DSW Commercial Real Estate",
+            "address" : "1795 E. Skyline Drive #193, Tucson, AZ 85718",
+            "phone" : "(520) 297-8929",
+            "url" : "http://www.dswcommercial.com/",
+            "icon" : "https://dswcommercial.com/wp-content/uploads/DSW-Logo_New_12_16.jpg",
+            "memLevel" : "Gold"
+        },
+        {
+            "name" : "Basket Butler",
+            "address" : "4626 E. Fort Lowell Road #103, Tucson, AZ 85712",
+            "phone" : "(520) 275-4569",
+            "url" : "http://www.basketbutler.com/",
+            "icon" : "https://basketbutler.com/wp-content/uploads/2021/12/BB-Logo-head.jpg",
+            "memLevel" : "Bronze"
+        },
+        {
+            "name" : "Hilton Tucson East",
+            "address" : "7600 E. Broadway Boulevard, Tucson, AZ 85710",
+            "phone" : "(520) 721-5600",
+            "url" : "http://www.tucsoneast.hilton.com/",
+            "icon" : "https://www.hilton.com/modules/assets/svgs/logos/HI.svg",
+            "memLevel" : "Silver"
+        }
+    ]
+}
