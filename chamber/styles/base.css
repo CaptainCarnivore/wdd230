@@ -115,7 +115,7 @@ p, #demoList {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0 auto;
+    margin: auto -40px;
 }
 
 .navigation li {
@@ -267,4 +267,93 @@ tbody tr:nth-child(even) th {
 thead th:first-child
 {
     background-color: var(--caribbean-current);
+}
+
+/* Directory stylings */
+
+.directoryMain {
+    max-width: 95%;
+    margin: auto;
+    margin-top: 5rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+}
+
+#viewMode {
+    align-self: center;
+    margin: auto;
+}
+
+#viewMode h3 {
+    color: black;
+}
+
+/* styling for grid view */
+.grid {
+    display: grid;   
+    grid-gap: 25px;
+}
+
+.grid section {
+	text-align: center;
+    box-shadow: 0 0 10px #333;
+    padding: 15px;
+}
+
+.grid .card img {
+    max-width: 200px;
+
+}
+
+.grid .card p, .grid .card h3 {
+    background-color: white;
+    color: black;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+/* styling for list view */
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.list .card p, .list .card h3 {
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.list section > * {
+	margin: 0 1rem;
+    padding: 10px;
+}
+
+.list .card img {
+    display: none;
+}
+
+.list section h3{
+	font-size: 1rem;
+    color: black;
+}
+
+.list section a {
+	font-size: 1.15rem;
+}
+
+.list .card:nth-child(odd), .list .card:nth-child(odd) p, .list .card:nth-child(odd) h3{
+	background-color: var(--zebra);
 }

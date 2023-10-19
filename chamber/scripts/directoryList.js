@@ -26,14 +26,13 @@ const displayMembers = (members) => {
         itemName.textContent = `${member.name}`;
         itemImage.setAttribute('src', member.icon);
         itemImage.setAttribute('alt', `Logo for ${member.name}`);
-        itemImage.setAttribute('width', '150');
-        itemImage.setAttribute('height', '150');
+
 
         itemAddress.textContent = `${member.address}`;
         itemPhone.textContent = `${member.phone}`;
         itemUrl.href = `${member.url}`;
         itemUrl.text = `Website`;
-        itemLevel.textContent = `${member.memLevel}`;
+        itemLevel.textContent = `Membership Level: ${member.memLevel}`;
 
         card.appendChild(itemImage);
         card.appendChild(itemName);
@@ -45,4 +44,20 @@ const displayMembers = (members) => {
         display.appendChild(card);
 
     });
+}
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
 }

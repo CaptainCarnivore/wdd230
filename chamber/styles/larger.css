@@ -5,10 +5,13 @@
     .navigation {
         display: flex;
 		flex-direction: row;
+        margin: auto -40px;
+        align-items: center;
 	}
     .navigation li {
 		display: block;
 		flex: 1 1 100%;
+        text-align: center;
 	}
 
     nav a {
@@ -40,4 +43,53 @@
     .gallery .card img:hover {
         box-shadow: 0 0 50px #333;
     }
+
+    /* Directory stylings */
+
+    .directoryMain {
+        max-width: 95%;
+        margin: auto;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* styling for grid view */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 35px;
+	    align-items: center;
+        margin: 25px;
+    }
+
+    .grid section {
+        text-align: center;
+        width: 300px;
+        height: 250px;
+    }
+    
+    .grid section > * {
+        margin: 0.1rem;
+    }
+
+    .grid .card img {
+        max-width: 100px;
+        max-height: 75px;
+    }
+
+    /* styling for list view */
+
+    .list {
+        display: grid;
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+    }
+
+
 }
