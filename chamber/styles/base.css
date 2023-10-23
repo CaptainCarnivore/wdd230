@@ -1,7 +1,7 @@
 :root {
     --caribbean-current: #246a73ff;
-    --dark-cyan: #368f8bff;
-    --isabelline: #f4edeaff;
+    --dark-cyan: #225955;
+    --isabelline: rgb(255, 255, 255);
     --light-orange: #F4D1AE;
     --border: hsla(0,0%,20%,.8);
 	--borderlight: hsla(0,0%,33%,.3);
@@ -244,13 +244,14 @@ th, td
 
 tbody tr:nth-child(even) {
 	background-color: lightgray;
+    color: black;
 }
 tbody tr:nth-child(odd) {
     background-color: var(--dark-cyan);
+    color: white;
 }
 
 td {
-    color: black;
 	text-align: center;
     padding: .5rem;
 }
@@ -263,11 +264,55 @@ tbody tr:nth-child(even) th {
     color: black;
 }
 
+caption {
+    color: black;
+}
+
 
 thead th:first-child
 {
     background-color: var(--caribbean-current);
 }
+
+.frontCard {
+    background-color: var(--caribbean-current);
+    border-radius: 25px;
+}
+
+.frontCard a {
+    color: rgb(238, 250, 255);
+}
+
+/*Forecast stylings */
+
+#forecast {
+    display: grid;
+    width: auto;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom:20px;
+    gap: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#forecast h3 {
+    grid-column: span 3;
+}
+
+.forecastDayCard {
+    background-color: black;
+    padding: 5px;
+    grid-row: 2;
+    border-radius: 10%;
+}
+
+.forecastDayCard h3 {
+    padding: 2px;
+}
+
+
+
 
 /* Directory stylings */
 
