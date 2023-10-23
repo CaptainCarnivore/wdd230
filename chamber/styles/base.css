@@ -286,25 +286,24 @@ thead th:first-child
 /*Forecast stylings */
 
 #forecast {
-    display: grid;
-    width: auto;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
     padding-bottom:20px;
     gap: 5px;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-#forecast h3 {
-    grid-column: span 3;
-}
 
 .forecastDayCard {
     background-color: black;
     padding: 5px;
     grid-row: 2;
     border-radius: 10%;
+    width: 33%;
 }
 
 .forecastDayCard h3 {
@@ -312,6 +311,42 @@ thead th:first-child
 }
 
 
+/* index spotlight stylings */
+
+#spotlight .card img {
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    padding: 2px;
+}
+
+#spotlight {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+    background-color: var(--back2);
+    border-radius: 5%;
+}
+
+#spotlight section {
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    border-radius: 20%;
+}
+
+#spotlight section > * {
+    margin: 0.1rem;
+}
+
+#spotlight .card a {
+    background-color: var(--dark-cyan);
+}
 
 
 /* Directory stylings */
@@ -401,4 +436,27 @@ thead th:first-child
 
 .list .card:nth-child(odd), .list .card:nth-child(odd) p, .list .card:nth-child(odd) h3{
 	background-color: var(--zebra);
+}
+
+/* Banner Stylings */
+
+#banner {
+    display: none;
+    justify-self: center;
+    position: absolute;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: center;
+    width: 70%;
+
+}
+#banner h2 {
+    padding: 40px;
+    border-radius: 20%;
+}
+
+#closeBanner {
+    position: absolute;
+    top: 25%;
+	right: 1%;
 }

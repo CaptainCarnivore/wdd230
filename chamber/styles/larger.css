@@ -90,6 +90,25 @@
         margin: 0;
         padding: 0.25rem;
     }
-
+    #banner {
+        display: none;
+        justify-self: center;
+        position: absolute;
+        margin-right: 25%;
+        margin-left: 25%;
+        text-align: center;
+        width: 50%;
+        
+    }
+    #banner h2 {
+        padding: 40px;
+        border-radius: 20%;
+    }
+    
+    #closeBanner {
+        position: absolute;
+        top: 3rem;
+        right: 1rem;
+    }
 
 }

@@ -1,18 +1,31 @@
 const linksURL = "https://captaincarnivore.github.io/wdd230/chamber/data/members.json";
 
-const display = document.querySelector('#mainDisplay');
+const display = document.querySelector('#spotlight');
 
 async function getMembers() {
     const response = await fetch(linksURL);
     const data = await response.json();
     //console.log(data);
-    displayMembers(data.members);
+    displaySpotlight(data.members);
 }
 
 getMembers();
 
-const displayMembers = (members) => {
-    members.forEach((member) => {
+const displaySpotlight = (members) => {
+    let randomList = new Array();
+    const n = 3;
+
+do {
+    const randomElement = members[Math.floor(Math.random() * members.length)];
+    if (!randomList.includes(randomElement)) {
+        randomList.push(randomElement);
+    }
+}
+while (randomList.length < n);
+
+    //console.log(randomList);
+
+    randomList.forEach((member) => {
         let card = document.createElement("section");
         let itemName = document.createElement("h3");
         let itemImage = document.createElement("img");
@@ -39,25 +52,8 @@ const displayMembers = (members) => {
         card.appendChild(itemAddress);
         card.appendChild(itemPhone);
         card.appendChild(itemUrl);
-        card.appendChild(itemLevel);
+
 
         display.appendChild(card);
-
-    });
-}
-
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-
-gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
-
-listbutton.addEventListener("click", showList); // example using defined function
-
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+})
 }
