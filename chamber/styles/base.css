@@ -93,6 +93,11 @@ p, #demoList {
     cursor: pointer;
 }
 
+li, ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
 #menu::before {
 	content: "☰";
 }
@@ -309,6 +314,7 @@ thead th:first-child
 .forecastDayCard h3 {
     padding: 2px;
 }
+
 
 
 /* index spotlight stylings */
